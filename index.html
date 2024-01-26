@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter&family=Play:wght@700&family=Young+Serif&display=swap"
+            rel="stylesheet">
+
+        <!-- Css -->
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="icon" href="src/img/icon.ico" type="image/png">
+
+        <title>Coffe Galery</title>
+
+</head>
+
+
+<header>
+
+  
+
+</header>
+
+<body>
+
+    <div class="fundo">
+        <img src="src/img/Fundo_pattern.png" alt="">
+    </div>
+
+
+    <div class="titulo">
+        <h1>Coffe Galery</h1>
+    </div>
+
+
+    <div class="conteudo">
+
+
+        <div class="imagens">
+
+            <div class="img_esquerda">
+                <img src="src/img/quinta.jpg" alt="Imagem a esquerda" id="img_esquerda">
+            </div>
+
+            <div class="img_principal">
+                <img id="imgGrande" src="src/img/primeira.jpg"
+                    alt="Imagem das xicaras em tamnho grande">
+            </div>
+
+            <div class="img_direita">
+                <img src="src/img/segunda.jpg" alt="imgaem das xicaras na direita" id="img_direita">
+            </div>
+
+        </div>
+
+
+        <div class="setas">
+
+            <img src="src/img/Polygon 2.svg" onclick="proxima()" class="direita">
+            <img src="src/img/Polygon 1.svg" onclick="anterior()" class="esquerda">
+
+        </div>
+
+        <div class="tumble">
+
+            <div class="Tumble1" onclick="primeira()"><img src="src/img/primeira.jpg" alt=""></div>
+            <div class="Tumble2" onclick="segunda()"><img src="src/img/segunda.jpg" alt=""></div>
+            <div class="Tumble3" onclick="terceira()"><img src="src/img/terceira.jpg" alt=""></div>
+            <div class="Tumble4" onclick="quarta()"><img src="src/img/quarta.jpg" alt=""></div>
+            <div class="Tumble5" onclick="quinta()"><img src="src/img/quinta.jpg" alt=""></div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
