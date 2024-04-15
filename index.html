@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter&family=Play:wght@700&family=Young+Serif&display=swap" rel="stylesheet">
@@ -13,64 +13,84 @@
 </head>
 
 <header>
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <body>
 
     <div class="fundo">
-        <img src="src/img/Fundo_pattern.png" alt="">
+        <img src="assets/img/Fundo_pattern.png" alt="">
+    </div>
+   
+    <!-- Carrosel -->
+
+    <div  class="d-flex justify-content-center" style="width: 100%;">
+        <div id="carouselExampleRide" class="carousel slide " style="width: 100%;" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/primeira.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/segunda.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/terceira.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/quarta.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/quinta.jpg" class="d-block w-50" alt="...">
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
 
 
-    <div class="titulo">
-        <h1>Coffe Galery</h1>
-    </div>
-
-
-    <div class="conteudo">
-
-
-        <div class="imagens">
-
-            <div class="img_esquerda">
-                <img src="src/img/quinta.jpg" alt="Imagem a esquerda" id="img_esquerda">
-            </div>
-
-            <div class="img_principal">
-                <img id="imgGrande" src="src/img/primeira.jpg"
-                    alt="Imagem das xicaras em tamnho grande">
-            </div>
-
-            <div class="img_direita">
-                <img src="src/img/segunda.jpg" alt="imgaem das xicaras na direita" id="img_direita">
-            </div>
-
-        </div>
-
-
-        <div class="setas">
-
-            <img src="src/img/Polygon 2.svg" onclick="proxima()" class="direita">
-            <img src="src/img/Polygon 1.svg" onclick="anterior()" class="esquerda">
-
-        </div>
-
-        <div class="tumble">
-
-            <div class="Tumble1" onclick="primeira()"><img src="src/img/primeira.jpg" alt=""></div>
-            <div class="Tumble2" onclick="segunda()"><img src="src/img/segunda.jpg" alt=""></div>
-            <div class="Tumble3" onclick="terceira()"><img src="src/img/terceira.jpg" alt=""></div>
-            <div class="Tumble4" onclick="quarta()"><img src="src/img/quarta.jpg" alt=""></div>
-            <div class="Tumble5" onclick="quinta()"><img src="src/img/quinta.jpg" alt=""></div>
-
-        </div>
-
-
-    </div>
-
-
-    <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
