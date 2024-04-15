@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter&family=Play:wght@700&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #404040;
+    overflow: hidden;
+}
+
+header {
+    background-color: #000000;
+}
+
+.fundo {
+    top: 0;
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.titulo {
+    margin: 50px 70px;
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+}
+
+.titulo h1 {
+    font-family: Inter;
+    font-size: 64px;
+}
+
+.conteudo {
+    position: relative;
+}
+
+
+.imagens {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img_principal {
+    border-radius: 30px;
+    margin-right: 200px;
+    margin-left: 200px;
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_esquerda img {
+    border-radius: 30px;
+    width: 1054px;
+    height: 721px;
+    box-shadow: 20px 20px 0px rgba(51, 53, 56, 0.5);
+
+}
+
+.img_principal img {
+    border-radius: 30px;
+    width: 1054px;
+    height: 721px;
+    
+}
+
+.img_direita img {
+    border-radius: 30px;
+    width: 1054px;
+    height: 721px;
+    box-shadow: -20px 20px 10px rgba(51, 53, 56, 0.5);
+}
+
+.direita {
+    position: absolute;
+    top: 300px;
+    right: 150px;
+}
+
+.esquerda {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+.tumble img {
+    width: 125px;
+    height: 125px;
+}
+
+.tumble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Tumble1,
+.Tumble2,
+.Tumble3,
+.Tumble4,
+.Tumble5 {
+    padding: 20px;
+    
+}
+
+.Tumble1 img,
+.Tumble2 img,
+.Tumble3 img,
+.Tumble4 img,
+.Tumble5 img{
+    box-shadow: 15px 25px 40px rgba(51, 53, 56, 0.5);
+    border-radius: 20px;
+}
